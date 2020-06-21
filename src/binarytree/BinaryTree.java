@@ -295,7 +295,7 @@ public class BinaryTree {
     }
 
     private int countLeaves(Node node) {
-        if (root == null){
+        if (root == null) {
             return 0;
         }
 
@@ -351,5 +351,24 @@ public class BinaryTree {
         }
 
         return false;
+    }
+
+    public boolean isBalanced() {
+        return isBalanced(root);
+    }
+
+    private boolean isBalanced(Node node) {
+        if (node == null) {
+            return true;
+        }
+
+        int balanceFactor = height(node.leftChild) - height(node.rightChild);
+        return Math.abs(balanceFactor) <= 1
+                && isBalanced(node.leftChild)
+                && isBalanced(node.rightChild);
+    }
+
+    public boolean isPerfect() {
+        return size() == (Math.pow(2, height() + 1) - 1);
     }
 }
