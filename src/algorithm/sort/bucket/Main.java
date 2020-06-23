@@ -1,4 +1,4 @@
-package algorithm.selectionsort;
+package algorithm.sort.bucket;
 
 import java.util.Arrays;
 
@@ -7,8 +7,8 @@ public class Main {
     public static void main(String[] args) {
         int[] numbers = {7, 3, 1, 4, 6, 2, 3, 5};
 
-        SelectionSort selectionSort = new SelectionSort();
-        selectionSort.sort(numbers);
+        BucketSort bucketSort = new BucketSort();
+        bucketSort.sort(numbers, 3);
 
         System.out.println(Arrays.toString(numbers));
     }

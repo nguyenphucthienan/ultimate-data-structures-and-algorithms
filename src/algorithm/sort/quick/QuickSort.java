@@ -1,4 +1,4 @@
-package algorithm.quicksort;
+package algorithm.sort.quick;
 
 public class QuickSort {
 

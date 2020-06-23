@@ -1,4 +1,4 @@
-package algorithm.coutingsort;
+package algorithm.sort.couting;
 
 public class CountingSort {
 

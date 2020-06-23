@@ -1,4 +1,4 @@
-package algorithm.bucketsort;
+package algorithm.sort.bucket;
 
 import java.util.ArrayList;
 import java.util.Collections;
